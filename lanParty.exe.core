@@ -1,0 +1,23 @@
+[main] lanParty 1000 (0) exception: trapped!
+[main] lanParty 1000 (0) exception: code 0xC0000005 at 0x6105E3B8
+[main] lanParty 1000 (0) exception: ax 0x34 bx 0x0 cx 0xA032174 dx 0x2C0C4A57
+[main] lanParty 1000 (0) exception: si 0x6105A14D di 0x648 bp 0x244FC24 sp 0x244F978
+[main] lanParty 1000 (0) exception: exception is: STATUS_ACCESS_VIOLATION
+[main] lanParty 1000 (0) stack: Stack trace:
+[main] lanParty 1000 (0) stack: frame 0: sp = 0x244F300, pc = 0x6100A2C3
+[main] lanParty 1000 (0) stack: frame 1: sp = 0x244F33C, pc = 0x77E28F72
+[main] lanParty 1000 (0) stack: frame 2: sp = 0x244F360, pc = 0x77E28F44
+[main] lanParty 1000 (0) stack: frame 3: sp = 0x244F428, pc = 0x77E07156
+[main] lanParty 1000 (0) stack: frame 4: sp = 0x244FC24, pc = 0x61052B20
+[main] lanParty 1000 (0) stack: frame 5: sp = 0x244FC38, pc = 0x40115B
+[main] lanParty 1000 (0) stack: frame 6: sp = 0x244FC78, pc = 0x401280
+[main] lanParty 1000 (0) stack: frame 7: sp = 0x244FCD4, pc = 0x4017FB
+[main] lanParty 1000 (0) stack: frame 8: sp = 0x244FD90, pc = 0x61004402
+[main] lanParty 1000 (0) stack: frame 9: sp = 0x244FF3C, pc = 0x61004420
+[main] lanParty 1000 (0) stack: frame 10: sp = 0x244FF48, pc = 0x4020BE
+[main] lanParty 1000 (0) stack: frame 11: sp = 0x244FF58, pc = 0x40103A
+[main] lanParty 1000 (0) stack: frame 12: sp = 0x244FF74, pc = 0x75AF6BA9
+[main] lanParty 1000 (0) stack: frame 13: sp = 0x244FF84, pc = 0x77DF8F9F
+[main] lanParty 1000 (0) stack: frame 14: sp = 0x244FFDC, pc = 0x77DF8F6D
+[main] lanParty 1000 (0) stack: frame 15: sp = 0x244FFEC, pc = 0x0
+[main] lanParty 1000 (0) stack: End of stack trace

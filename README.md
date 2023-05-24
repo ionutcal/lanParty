@@ -18,16 +18,11 @@ Am implementat urmatoarele functii:
  Intr-un loop while, se parcurg rundele pana cand raman doar 8 echipe.
  In fiecare runda, se afiseaza echipele si se construieste coada de meciuri din echipele ramase.
  Se parcurge coada de meciuri si se determina echipele castigatoare si pierzatoare pentru fiecare meci.
- Echipele pierzatoare sunt eliminate, iar echipele castigatoare sunt adaugate intr-un stiva.
+ Echipele pierzatoare sunt eliminate, iar echipele castigatoare sunt adaugate intr-o stiva.
  Se afiseaza echipele castigatoare si echipele eliminate din fiecare runda.
  Se reduce numarul de echipe si se repeta procesul pentru runda urmatoare.
  Dupa ce se termina runda finala, se afiseaza clasamentul final al echipelor si numarul total de runde.
  Fisierele de intrare si de iesire sunt inchise, iar memoria alocata dinamic este eliberata.
 
-Functionalitatile comentate din programul final sunt legate de cerinta 4, ce se refera la construirea unui arbore de echipe si afisarea clasamentului cu ultimele 8 echipe in ordine descrescatoare, sub forma unui BST, dar nu sunt utilizate in implementarea finala a programului.
 
  !! Programul nu este finalizat, inca sunt multe erori si alte aspecte care nu sunt evidente, dar ce trebuiesc reparate !!
-# lanParty
-# lanPARTY
-# lanParty
-# lanParty

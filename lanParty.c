@@ -44,7 +44,6 @@ struct Player readPlayer(FILE* inputFile) {
     char *firstName;
     char *secondName;
     int points;
-    int players;
 
     fscanf(inputFile, "%s %s %d", firstName, secondName, &points);
 
@@ -218,7 +217,6 @@ int main() {
 
         int winnersTop = -1;
         struct Team* winnersStack = (struct Team*)malloc(numTeamsRemaining * sizeof(struct Team));
-        struct Team* losersStack = (struct Team*)malloc(numTeamsRemaining * sizeof(struct Team));
 
         while (numTeamsRemaining > 1) {
 
@@ -227,10 +225,8 @@ int main() {
             for (int i = 0; i < numTeamsRemaining; i += 2) {
                 if (matchQueue[i].score >= matchQueue[i + 1].score) {
                     winnersStack[++winnersTop] = matchQueue[i];
-                    losersStack[winnersTop] = matchQueue[i + 1];
                 } else {
                     winnersStack[++winnersTop] = matchQueue[i + 1];
-                    losersStack[winnersTop] = matchQueue[i];
                 }
             }
             removeLowestScoreTeam(matchQueue, numMatchTeams);
@@ -267,6 +263,8 @@ int main() {
     // inOrderTraversal(root);
     fprintf(outputFile, "\nTOTAL ROUNDS: %d", numRounds);
     fclose(outputFile);
+    free(teams);
+    free(player);
     free(matchQueue);
     free(winnersStack);
     free(teams);
@@ -275,3 +273,4 @@ int main() {
 
     return 0;
 }
+

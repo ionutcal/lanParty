@@ -271,7 +271,6 @@ int main() {
     free(player);
     free(matchQueue);
     free(winnersStack);
-    free(losersStack);
     free(teams);
 
    // freeTeam(root);

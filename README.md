@@ -4,7 +4,7 @@ In programul scris, cerintele incercate sunt 1, 2 si 3, iar cerinta 4 este scris
 Solutia programului:
 
 Am definit structura `Player` care stocheaza informatii despre un jucator: numele, punctajul.
-Am definit structura `Team` care stocheaza informatii despre o echipa: numele echipei, jucatorii echipei, numarul de jucatori si punctajul echipei.
+Am definit structura `Team` care stocheaza informatii despre o echipa: numele echipei, jucatorii echipei, numarul de jucatori, punctajul echipei si referintele catre echipele din stanga si dreapta.
 Am implementat urmatoarele functii:
  - `removeExtraSpaces` care elimina spatiile suplimentare din fisierul de intrare.
  - `readPlayer` care citeste un jucator din fisierul de intrare si returneaza o structura `Player` cu informatiile corespunzatoare.

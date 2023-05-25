@@ -13,6 +13,7 @@ Am implementat urmatoarele functii:
  - `removeLowestScoreTeam` care elimina echipa cu cel mai mic punctaj dintr-un vector de echipe.
  - `printMatchQueue` care afiseaza perechile de echipe care se vor intalni intr-o runda in fisierul de iesire.
  - `printWinnersStack` care afiseaza echipele castigatoare ale unei runde in fisierul de iesire.
+ - 'printStack' care afiseaza echipele în ordinea in care au fost eliminate din competitie în fisierul de iesire.
 
  In functia `main`, se deschid fisierele de intrare si de iesire. Apoi se apeleaza functiile pentru a citi echipele si jucatorii, se afiseaza echipele, si se initializeaza coada de meciuri cu echipele initiale.
  Intr-un loop while, se parcurg rundele pana cand raman doar 8 echipe.

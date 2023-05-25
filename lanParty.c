@@ -129,7 +129,7 @@ void printStack(FILE* outputFile, struct Team* stack, int top) {
     fprintf(outputFile, "\n");
 }
 
-/* struct Team* createTeamNode(char* name, int numPlayers, struct Player* players, int score) {
+/* CERINTA 4 struct Team* createTeamNode(char* name, int numPlayers, struct Player* players, int score) {
     struct Team* newNode = (struct Team*)malloc(sizeof(struct Team));
     newNode->name = strdup(name);
     newNode->numPlayers = numPlayers;
@@ -217,6 +217,7 @@ int main() {
 
         int winnersTop = -1;
         struct Team* winnersStack = (struct Team*)malloc(numTeamsRemaining * sizeof(struct Team));
+        struct Team* losersStack = (struct Team*)malloc(numTeamsRemaining * sizeof(struct Team));
 
         while (numTeamsRemaining > 1) {
 
@@ -225,8 +226,10 @@ int main() {
             for (int i = 0; i < numTeamsRemaining; i += 2) {
                 if (matchQueue[i].score >= matchQueue[i + 1].score) {
                     winnersStack[++winnersTop] = matchQueue[i];
+                    losersStack[winnersTop] = matchQueue[i + 1];
                 } else {
                     winnersStack[++winnersTop] = matchQueue[i + 1];
+                    losersStack[winnersTop] = matchQueue[i];
                 }
             }
             removeLowestScoreTeam(matchQueue, numMatchTeams);
@@ -239,6 +242,7 @@ int main() {
 
 
         printWinnersStack(outputFile, winnersStack, numTeamsRemaining * 2);
+        printStack(outputFile, losersStack, winnersTop);
 
         numRounds++;
         removeLowestScoreTeam(teams, numTeamsRemaining * 2);
@@ -267,10 +271,10 @@ int main() {
     free(player);
     free(matchQueue);
     free(winnersStack);
+    free(losersStack);
     free(teams);
 
    // freeTeam(root);
 
     return 0;
 }
-
